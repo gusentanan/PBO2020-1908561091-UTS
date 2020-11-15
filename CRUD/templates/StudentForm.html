@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+
+{% block content %}
+<form action="" method="post" autocomplete="off">
+    {% csrf_token %}
+    {{form.name|as_crispy_field}}
+  
+    <div class="row">
+        <div class="col-md-4">
+            {{form.number|as_crispy_field}}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8">
+            <button type="submit" class="btn btn-primary btn-block btn-lg "><i class="fas fa-burn"></i>
+                Enter</button>
+        </div>
+        <div class="col-md-4">
+            <a href="{% url 'list_student' %}" class="btn btn-secondary btn-block btn-lg">
+                <i class="fas fa-stream"></i> Lihat Daftar Siswa
+            </a>
+        </div>
+    </div>
+
+</form>
+{% endblock content %}
