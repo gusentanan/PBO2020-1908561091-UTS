@@ -3,18 +3,29 @@
 # Installasi
  ``` python
  pip install django
+ ```
+ ``` python
  virtualenv venv
+ ```
+ ``` python
  pip install mysqlclient
- 
+ ```
+ ``` python
  . venv/Scripts/activate
+ ```
+ ``` python
  python manage.py makemigrations
+ ```
+ ``` python
  python manage.py migrate
+ ```
+ ``` python
  python manage.py runserver
  ```
  
  # Sesuaikan Database 
  myproject/settings.py
- ```
+ ``` python
  DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
