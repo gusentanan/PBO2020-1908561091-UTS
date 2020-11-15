@@ -1,6 +1,7 @@
 # PBO2020-1908561091-UTS
 
 # Installasi
+pindah ke route direktori projek lalu jalankan command dibawah:
  ``` python
  pip install django
  ```
