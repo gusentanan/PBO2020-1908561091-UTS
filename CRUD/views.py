@@ -15,11 +15,6 @@ class StudentList(ListView):
 		return Student.objects.all()
 
 
-# def student_list(request):
-# 	item = {'student_list' : Student.objects.all()}
-# 	return render(request, 'StudentList.html', item)
-
-
 def student_form(request, id=0):
 	if request.method == 'GET':
 		if id == 0:
@@ -38,11 +33,6 @@ def student_form(request, id=0):
 			form.save()
 		return redirect('/student/list')
 
-
-# class StudentDelete(DeleteView):
-# 	model = Student
-# 	success_url = reverse_lazy('list_student')
-# 	template_name = 'StudentList.html'
 
 
 def student_delete(request, id):
