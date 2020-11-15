@@ -1,4 +1,7 @@
 # PBO2020-1908561091-UTS
 
 # Installasi
-pip install django
+ ``` python
+ pip install django
+ virtualenv venv
+ ```
