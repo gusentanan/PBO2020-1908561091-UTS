@@ -2,17 +2,17 @@
 
 # Installasi
  -- pindah ke route direktori projek lalu jalankan command dibawah:
+  ``` python
+ virtualenv venv
+ ```
+  ``` python
+ . venv/Scripts/activate
+ ```
  ``` python
  pip install django
  ```
  ``` python
- virtualenv venv
- ```
- ``` python
  pip install mysqlclient
- ```
- ``` python
- . venv/Scripts/activate
  ```
  ``` python
  python manage.py makemigrations
